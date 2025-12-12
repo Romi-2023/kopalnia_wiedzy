@@ -31,15 +31,6 @@ DONATE_PAYPAL_URL = os.environ.get(
     "https://paypal.me/RomanKnopp726"
 )
 
-DONATE_BANK_INFO = os.environ.get(
-    "D4K_BANK_INFO",
-    (
-        "Odbiorca: Roman Knopp / data4kids\n"
-        "Nr konta: PL17 1140 2004 0000 3702 7712 0566\n"
-        "Bank: mBank\n"
-        "Tytuł: Darowizna na rozwój Data4Kids"
-    )
-)
 # ---------------------------------
 # Utilities & basic security (MVP)
 # ---------------------------------
@@ -291,6 +282,14 @@ def current_level(xp: int) -> int:
     if xp >= 60: return 3
     if xp >= 30: return 2
     return 1
+
+def normalize_url(url: str) -> str:
+    url = (url or "").strip()
+    if not url:
+        return ""
+    if url.startswith(("http://", "https://")):
+        return url
+    return "https://" + url
 
 # -----------------------------
 # Demo datasets (vary by age)
@@ -2955,7 +2954,7 @@ elif page == "Wsparcie & konkursy":
             """
         )
 
-        if any([DONATE_BUYCOFFEE_URL, DONATE_PAYPAL_URL, DONATE_BANK_INFO]):
+        if any([DONATE_BUYCOFFEE_URL, DONATE_PAYPAL_URL]):
             st.markdown("#### Dane do wpłaty")
 
             if DONATE_BUYCOFFEE_URL:
@@ -2963,17 +2962,14 @@ elif page == "Wsparcie & konkursy":
                     f"- ☕ Szybka wpłata: [BuyCoffee]({DONATE_BUYCOFFEE_URL})"
                 )
 
-            if DONATE_PAYPAL_URL:
-                st.markdown(
-                    f"- 💳 PayPal: [przejdź do płatności]({DONATE_PAYPAL_URL})"
-                )
+            pp = normalize_url(DONATE_PAYPAL_URL)
 
-            if DONATE_BANK_INFO:
-                st.markdown("**Przelew tradycyjny:**")
-                st.code(DONATE_BANK_INFO, language="text")
+            if pp:
+                st.link_button("💳 Wesprzyj projekt przez PayPal", pp)
+
         else:
             st.info(
-                "Adminie: ustaw `D4K_BUYCOFFEE_URL`, `D4K_PAYPAL_URL` i/lub `D4K_BANK_INFO` "
+                "Adminie: ustaw `D4K_BUYCOFFEE_URL`, `D4K_PAYPAL_URL` "
                 "w kodzie lub zmiennych środowiskowych, aby tutaj pokazać konkretne dane do wpłat."
             )
 
