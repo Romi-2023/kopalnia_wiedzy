@@ -28,7 +28,7 @@ DONATE_BUYCOFFEE_URL = os.environ.get(
 
 DONATE_PAYPAL_URL = os.environ.get(
     "D4K_PAYPAL_URL",
-    "paypal.me/RomanKnopp726"  # albo link z przycisku PayPal Donate
+    "https://paypal.me/RomanKnopp726"
 )
 
 DONATE_BANK_INFO = os.environ.get(
