@@ -1,4 +1,4 @@
-# Data4Kids — uruchamianie lokalne (PowerShell)
+# Kopalnia Wiedzy — uruchamianie lokalne (PowerShell)
 # Uruchamiaj:  kliknij PPM → "Uruchom z PowerShell", albo:  .\run.ps1
 
 # 1) Virtualenv

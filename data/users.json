@@ -1,47 +1,4 @@
 {
-  "Roman": {
-    "salt": "86dbff7e893b1d93",
-    "password_hash": "4197981d70344ce540747418b5dd813afeb6a2890fa8c37049a08cf5d39bd6fa",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "school_tasks": {
-      "2025-11-06": {
-        "matematyka": [
-          "cd1a6d45a857",
-          "ee60234f3fab"
-        ],
-        "historia": [
-          "f9fd986676a8"
-        ],
-        "polski": [
-          "8ad8f333823c",
-          "909e6f0b5a4f"
-        ]
-      },
-      "2025-11-07": {
-        "matematyka": [
-          "ee60234f3fab"
-        ]
-      },
-      "2025-11-17": {
-        "matematyka": [
-          "df983487025e"
-        ]
-      }
-    },
-    "rower": {
-      "theory_viewed": [
-        "podstawy:kim_jest_rowerzysta"
-      ],
-      "quiz_total": 24,
-      "quiz_correct": 22,
-      "exam_best_score": 100,
-      "hard_questions": {
-        "q3_prawa_reka": 1
-      }
-    }
-  },
   "_parent_pin": {
     "salt": "502ba5234eb852a2c902d6216a8ec297",
     "hash": "a9b7404001ff5879bf3990ff48146b2a51987bccea93ba62c57a9418ca78b680"
@@ -49,56 +6,7 @@
   "_admin_totp": {
     "secret": "ZVNJEYA2WRBMBKBT4AWET4PUGPMYAILT"
   },
-  "Tadek": {
-    "salt": "87bd8615539bf747",
-    "password_hash": "d85df6a3df255f022768f8df9b8bf62d1e26119a5adfbf066266d6845ed8821e",
-    "xp": 0,
-    "stickers": [],
-    "badges": []
-  },
-  "Krzysiu": {
-    "salt": "4215dc727739f588",
-    "password_hash": "4eb5184caa419f0ef02434d33cb2cac2d1a55b8a1a89c0a7a5eaa1763cd5189e",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "accepted_terms_version": "0.9.0"
-  },
-  "Tczew": {
-    "salt": "8679251c3c13dbd5",
-    "password_hash": "6261d0426ec176222fca8becbc9ab0ea722eeb3cf44f35d2ad78ef5145d65b25",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "accepted_terms_version": "0.9.0"
-  },
-  "Wrocław": {
-    "salt": "53b1631dcf8d04bd",
-    "password_hash": "80463c3bd38455ebef7cabd22eeacdf5def80d7cc17e831f460cdbfca068deb5",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "accepted_terms_version": "0.9.0"
-  },
-  "Gdańsk": {
-    "salt": "4bc5ce4edf555b3c",
-    "password_hash": "8042c8365953a940c9eae4a42f8f97c82a81b75fffdde3980fd55db68dd93d15",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "accepted_terms_version": "0.9.0"
-  },
-  "Zbigniew": {
-    "salt": "4a639d0fee5f0e32",
-    "password_hash": "fe9f61ee4b5b958994e22c7cff11e69debbec11be81d9e123906c9ff4eecf83f",
-    "xp": 0,
-    "stickers": [],
-    "badges": [],
-    "accepted_terms_version": "0.9.0",
-    "rower": {
-      "theory_viewed": [
-        "podstawy:kim_jest_rowerzysta"
-      ]
-    }
+  "Gosc-4719": {
+    "created_at": "2026-02-17T09:44:39.647173"
   }
 }

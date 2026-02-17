@@ -1,0 +1,23 @@
+# Lista słów niedozwolonych w loginie (jedno słowo na linię, małymi literami).
+# Linie zaczynające się od # są ignorowane. Możesz dopisywać kolejne słowa.
+kurwa
+chuj
+jebać
+pierdolić
+dupa
+gówno
+skurwysyn
+dziwka
+pizda
+suka
+kurew
+kurwy
+chuje
+debil
+idiota
+fuck
+shit
+ass
+dick
+cunt
+bitch

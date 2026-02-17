@@ -8,4 +8,5 @@ pyotp
 qrcode
 pillow
 fpdf2
+streamlit-lottie
 

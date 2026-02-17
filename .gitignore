@@ -1,12 +1,34 @@
-﻿# Python
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+env/
 
 # VS Code
 .vscode/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dane użytkowników i runtime – nie commituj
+data/admin_config.json
+data/users.json
+data/users.json.lock
+data/donors.json
+data/draws.json
+data/contest_participants.json
+data/guest_signups.json
+data/last_guest_cleanup_date.txt
+data/parent_pin.json
+data/*.lock
+logs/
+.env
+.env.local
+
+# Panel nadzoru (TOTP) – nie commituj sekretu
+# (admin_config.json już w data/ powyżej)
 
 # Systemowe
 .DS_Store

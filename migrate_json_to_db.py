@@ -2,55 +2,22 @@ import os
 import json
 import psycopg2
 
+# --- Paths (single source of truth) ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
+
+# fallback lokalny (dev) – niech katalog istnieje
+try:
+    os.makedirs(DATA_DIR, exist_ok=True)
+except Exception:
+    pass
 
 USERS_FILE = os.path.join(DATA_DIR, "users.json")
 DONORS_FILE = os.path.join(DATA_DIR, "donors.json")
 DRAWS_FILE = os.path.join(DATA_DIR, "draws.json")
+CONTEST_PARTICIPANTS_FILE = os.path.join(DATA_DIR, "contest_participants.json")
 
 DATABASE_URL = os.environ.get("DATABASE_URL")
-
-
-def get_db_connection():
-    if not DATABASE_URL:
-        raise RuntimeError("Brak zmiennej środowiskowej DATABASE_URL")
-    return psycopg2.connect(DATABASE_URL)
-
-
-def ensure_kv_table():
-    conn = get_db_connection()
-    try:
-        with conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    """
-                    CREATE TABLE IF NOT EXISTS kv_store (
-                        key   TEXT PRIMARY KEY,
-                        value TEXT NOT NULL
-                    );
-                    """
-                )
-    finally:
-        conn.close()
-
-
-def kv_set_json(key: str, value) -> None:
-    payload = json.dumps(value, ensure_ascii=False)
-    conn = get_db_connection()
-    try:
-        with conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    """
-                    INSERT INTO kv_store (key, value)
-                    VALUES (%s, %s)
-                    ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;
-                    """,
-                    (key, payload),
-                )
-    finally:
-        conn.close()
 
 
 def load_json_if_exists(path, default):
@@ -94,6 +61,11 @@ def main():
     draws = load_json_if_exists(DRAWS_FILE, [])
     kv_set_json("draws", draws)
     print(f"[OK] Zapisano 'draws' do kv_store (rekordów: {len(draws) if isinstance(draws, list) else 'nie dotyczy'})")
+
+    # 5. Uczestnicy konkursu
+    contest_participants = load_json_if_exists(CONTEST_PARTICIPANTS_FILE, [])
+    kv_set_json("contest_participants", contest_participants)
+    print(f"[OK] Zapisano 'contest_participants' do kv_store (rekordów: {len(contest_participants) if isinstance(contest_participants, list) else 'nie dotyczy'})")
 
     print("=== Migracja zakończona ✅ ===")
 

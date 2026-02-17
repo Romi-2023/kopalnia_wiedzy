@@ -26,9 +26,9 @@
         "q": "Policz: 20 − 8",
         "options": [
           "21",
-          "20",
-          "19",
-          "18"
+          "18",
+          "15",
+          "12"
         ],
         "correct": 3
       },
@@ -189,10 +189,10 @@
         "type": "mcq",
         "q": "Mama upiekła 12 ciastek. Dziecko zjadło 3. Ile ciastek zostało?",
         "options": [
-          "7",
           "8",
           "9",
-          "10"
+          "10",
+          "11"
         ],
         "correct": 1
       },

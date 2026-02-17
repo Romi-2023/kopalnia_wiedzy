@@ -1,0 +1,62 @@
+[
+  {
+    "order": 1,
+    "id": "co_to_dane",
+    "title": "Co to są dane?",
+    "description": "Dane to liczby, słowa i fakty – surowy materiał do analizy.",
+    "unlock_type": "always"
+  },
+  {
+    "order": 2,
+    "id": "tabela_kolumny",
+    "title": "Tabela i kolumny",
+    "description": "Dane często siedzą w tabelach: wiersze to np. osoby, kolumny to cechy.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 1
+  },
+  {
+    "order": 3,
+    "id": "filtrowanie",
+    "title": "Filtrowanie",
+    "description": "Wybierasz tylko te wiersze, które spełniają warunek – jak szukanie w skarbcu.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 1
+  },
+  {
+    "order": 4,
+    "id": "srednia",
+    "title": "Średnia i liczby",
+    "description": "Średnia, min, max – podsumowujesz kolumnę jednym sensownym liczeniem.",
+    "unlock_type": "subject",
+    "unlock_subject": "matematyka"
+  },
+  {
+    "order": 5,
+    "id": "wykres",
+    "title": "Prosty wykres",
+    "description": "Wykres pokazuje dane wizualnie – łatwiej zobaczyć wzorce i porównania.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 2
+  },
+  {
+    "order": 6,
+    "id": "co_widać",
+    "title": "Co widać w danych?",
+    "description": "Wyciągasz wnioski: co jest typowe, co się wyróżnia, co może być ważne.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 2
+  },
+  {
+    "order": 7,
+    "id": "mistrz_danych",
+    "title": "Mistrz danych",
+    "description": "Łączysz tabelę, wykres i wnioski – to już prawdziwy krok w stronę Data Science.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 3
+  }
+]

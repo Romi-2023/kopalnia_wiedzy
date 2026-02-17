@@ -1,0 +1,61 @@
+[
+  {
+    "id": "kalkulator_liczb",
+    "name": "Kalkulator liczb",
+    "emoji": "🔢",
+    "description": "Dodajesz, odejmujesz i liczysz jak prawdziwy matematyk.",
+    "unlock_type": "subject",
+    "unlock_subject": "matematyka"
+  },
+  {
+    "id": "wykrywacz_wzorcow",
+    "name": "Wykrywacz wzorców",
+    "emoji": "📊",
+    "description": "Widzisz, co mówią wykresy i liczby – pierwszy krok do Data Science.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 1
+  },
+  {
+    "id": "filtr_prawdy",
+    "name": "Filtr prawdy",
+    "emoji": "🔍",
+    "description": "Wyszukujesz w tabelach i odsiewasz to, co ważne.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 2
+  },
+  {
+    "id": "tlumacz_slow",
+    "name": "Tłumacz słów",
+    "emoji": "📖",
+    "description": "Czytasz ze zrozumieniem i łapiesz sens tekstu.",
+    "unlock_type": "subject",
+    "unlock_subject": "polski"
+  },
+  {
+    "id": "odkrywca_historii",
+    "name": "Odkrywca historii",
+    "emoji": "🏛️",
+    "description": "Znasz daty, wydarzenia i przyczyny.",
+    "unlock_type": "subject",
+    "unlock_subject": "historia"
+  },
+  {
+    "id": "badacz_natury",
+    "name": "Badacz natury",
+    "emoji": "🌿",
+    "description": "Wiesz, jak działa przyroda wokół nas.",
+    "unlock_type": "subject",
+    "unlock_subject": "przyroda"
+  },
+  {
+    "id": "mistrz_danych",
+    "name": "Mistrz danych",
+    "emoji": "💎",
+    "description": "Średnie, wykresy i wnioski – to twój drugi język.",
+    "unlock_type": "quiz_level",
+    "unlock_quiz": "data_quiz",
+    "unlock_min_level": 3
+  }
+]

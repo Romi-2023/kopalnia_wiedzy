@@ -1,0 +1,15 @@
+[
+  {"term": "Dane", "definition": "Informacje zapisane w formie liczb, tekstu lub innych symboli. W tabeli dane są w wierszach i kolumnach."},
+  {"term": "Tabela danych", "definition": "Zbiór danych ułożonych w wierszach i kolumnach. Każda kolumna to jedna cecha (np. wiek), każdy wiersz to jeden rekord (np. jeden uczeń)."},
+  {"term": "Kolumna", "definition": "Pionowy zestaw wartości opisujący jedną cechę – np. kolumna „wiek” zawiera wiek wielu osób."},
+  {"term": "Wiersz", "definition": "Poziomy zestaw wartości – jeden rekord, np. dane o jednej osobie (jej wiek, miasto, ulubiony owoc itd.)."},
+  {"term": "Średnia (arytmetyczna)", "definition": "Suma wszystkich wartości podzielona przez ich liczbę. Np. średnia z 10, 20 i 30 to (10+20+30)/3 = 20."},
+  {"term": "Wykres", "definition": "Graficzne przedstawienie danych – np. słupki, linie lub koło – żeby łatwiej zobaczyć porównania i trendy."},
+  {"term": "CSV", "definition": "Format pliku z danymi w tabeli: wartości w wierszach, oddzielone przecinkami (lub średnikami). Łatwo go otworzyć w arkuszach i programach do danych."},
+  {"term": "Outlier (wartość odstająca)", "definition": "Wartość bardzo różna od pozostałych – np. jeden bardzo duży wynik w serii małych. Czasem to błąd, czasem ważna informacja."},
+  {"term": "Rekord", "definition": "Jeden wiersz w tabeli – zbiór informacji o jednej rzeczy (jedna osoba, jeden pomiar, jedna transakcja)."},
+  {"term": "Kondycja", "definition": "Poziom sprawności fizycznej – jak dobrze organizm radzi sobie z wysiłkiem i jak szybko się regeneruje."},
+  {"term": "Dylemat moralny", "definition": "Sytuacja, w której trudno wybrać między dwiema wartościami – np. gdy każda decyzja ma złe i dobre strony."},
+  {"term": "Misja (w Kopalni Wiedzy)", "definition": "Zadanie do wykonania w aplikacji – np. odpowiedzieć na pytanie, przeanalizować dane lub ukończyć pakiet z przedmiotu."},
+  {"term": "XP (punkty doświadczenia)", "definition": "Punkty zdobywane za wykonane zadania. Im więcej XP, tym wyższy poziom w aplikacji."}
+]
