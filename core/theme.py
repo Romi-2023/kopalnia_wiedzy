@@ -62,14 +62,12 @@ def apply_theme(page: str = "") -> None:
             padding-right: max(1rem, env(safe-area-inset-right)) !important;
           }
 
-          /* =====================================================
-             Responsywność: telefon, tablet, komputer
-          ===================================================== */
+          /* Responsywność – tylko delikatne zwiększenie max-width na szerszych ekranach, bez zmiany układu */
           @media (min-width: 640px){
             .block-container{ max-width: 600px !important; }
           }
           @media (min-width: 768px){
-            .block-container{ max-width: 720px !important; padding-top: 1rem !important; }
+            .block-container{ max-width: 720px !important; }
           }
           @media (min-width: 1024px){
             .block-container{ max-width: 800px !important; }

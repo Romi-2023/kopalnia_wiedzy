@@ -5,8 +5,5 @@
   },
   "_admin_totp": {
     "secret": "ZVNJEYA2WRBMBKBT4AWET4PUGPMYAILT"
-  },
-  "Gosc-4719": {
-    "created_at": "2026-02-17T09:44:39.647173"
   }
 }

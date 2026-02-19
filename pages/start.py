@@ -528,14 +528,14 @@ def render():
                     st.markdown('<span id="d4k-admin-btn-marker"></span>', unsafe_allow_html=True)
                     st.markdown("""
                     <style>
-                    /* Przycisk Panel administratora – mniejszy, normalny przypadek */
+                    /* Przycisk Panel administratora – mniejszy styl */
                     #d4k-admin-btn-marker ~ div div[data-testid="column"]:last-child div[data-testid="stButton"] button {
                         font-size: 12px !important; text-transform: none !important; letter-spacing: normal !important;
                         padding: 6px 12px !important; font-family: var(--ui), system-ui, sans-serif !important;
                     }
                     </style>
                     """, unsafe_allow_html=True)
-                    _ac1, _ac2 = st.columns([6, 1])
+                    _ac1, _ac2 = st.columns([2, 1])
                     with _ac2:
                         if st.button("Panel administratora", key="start_admin_btn", use_container_width=True):
                             st.session_state["page"] = "Nadzor"

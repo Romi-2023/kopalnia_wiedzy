@@ -90,12 +90,11 @@ body.page-memory .d4k-bottomnav {{
   -webkit-backdrop-filter: none !important;
 }}
 
-/* Zawsze zostaw miejsce pod bottom-nav (różne DOM-y Streamlit) + safe-area na telefonach */
+/* Zawsze zostaw miejsce pod bottom-nav (różne DOM-y Streamlit) */
 .block-container,
 section.main .block-container,
 div[data-testid="stAppViewContainer"] .main .block-container{{
-  padding-bottom: calc(150px + env(safe-area-inset-bottom)) !important;
-  padding-top: max(.65rem, env(safe-area-inset-top)) !important;
+  padding-bottom: calc(140px + env(safe-area-inset-bottom)) !important;
 }}
 
 .d4k-navbtn {{
@@ -103,8 +102,7 @@ div[data-testid="stAppViewContainer"] .main .block-container{{
   text-decoration: none !important;
   color: #111827;
   border-radius: 18px;
-  padding: 12px 8px;
-  min-height: 48px;
+  padding: 10px 8px;
   display: grid;
   place-items: center;
   gap: 2px;
