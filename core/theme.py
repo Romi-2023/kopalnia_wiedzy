@@ -56,6 +56,34 @@ def apply_theme(page: str = "") -> None:
             padding-top: .65rem !important;
             padding-bottom: 1.2rem !important;
             max-width: 560px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: max(1rem, env(safe-area-inset-left)) !important;
+            padding-right: max(1rem, env(safe-area-inset-right)) !important;
+          }
+
+          /* =====================================================
+             Responsywność: telefon, tablet, komputer
+          ===================================================== */
+          @media (min-width: 640px){
+            .block-container{ max-width: 600px !important; }
+          }
+          @media (min-width: 768px){
+            .block-container{ max-width: 720px !important; padding-top: 1rem !important; }
+          }
+          @media (min-width: 1024px){
+            .block-container{ max-width: 800px !important; }
+          }
+          /* Większe cele dotykowe na urządzeniach dotykowych */
+          @media (hover: none) and (pointer: coarse){
+            div[data-testid="stButton"] > button{
+              min-height: 44px !important;
+              padding-top: 10px !important;
+              padding-bottom: 10px !important;
+            }
+            input, select, [role="combobox"]{
+              min-height: 44px !important;
+            }
           }
 
           /* =====================================================
