@@ -138,6 +138,7 @@ def _show_setup_or_login():
                 st.rerun()
             else:
                 st.error("Nieprawidłowy kod. Sprawdź czas w telefonie i spróbuj ponownie.")
+                st.caption("Jeśli utraciłeś dostęp: uruchom lokalnie skrypt `reset_admin_totp.py`, ustaw zmienną ADMIN_TOTP_SECRET na serwerze i dodaj nowy wpis w Authenticatorze.")
     with col2:
         if st.button("Anuluj"):
             st.session_state.pop("nadzor_totp_code", None)

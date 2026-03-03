@@ -64,7 +64,8 @@ def generate_totp_secret() -> str:
 
 
 def verify_totp(code: str) -> bool:
-    """Sprawdza 6-cyfrowy kod z Authenticatora. Zwraca True jeśli poprawny."""
+    """Sprawdza 6-cyfrowy kod z Authenticatora. Zwraca True jeśli poprawny.
+    valid_window=2 (±1 okno, łącznie ~90 s) – toleruje lekkie rozjechanie zegara serwera i telefonu."""
     if not code or not code.strip():
         return False
     secret = get_totp_secret()
@@ -72,7 +73,7 @@ def verify_totp(code: str) -> bool:
         return False
     try:
         totp = pyotp.TOTP(secret)
-        return totp.verify(code.strip().replace(" ", ""), valid_window=1)
+        return totp.verify(code.strip().replace(" ", ""), valid_window=2)
     except Exception:
         return False
 

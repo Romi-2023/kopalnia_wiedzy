@@ -27,8 +27,9 @@ logs/
 .env
 .env.local
 
-# Panel nadzoru (TOTP) – nie commituj sekretu
+# Panel nadzoru (TOTP) – nie commituj sekretu ani wygenerowanego QR
 # (admin_config.json już w data/ powyżej)
+admin_totp_qr.png
 
 # Systemowe
 .DS_Store
